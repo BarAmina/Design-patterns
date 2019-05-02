@@ -26,7 +26,7 @@ La structure générale du projet :
 								                                                                      -->PaypalCard.jav
 
      -test-->java -->com--> amina--> org--> design--> patterns-->singleton-->  DatabasConnectionSIGTest.java
-						                                                  -->strategyAmazonBoughtItemsTest.java
+				                              -->strategy-->AmazonBoughtItemsTest.java
      - target
      - pom.xml
 
@@ -45,8 +45,8 @@ C’est la classe qui implémente le design pattern singelton ; cette technique 
       - Les classes   MasterCard.java et PaypalCard.java implémente l’interface et redéfinissent la fonction.
       - La classe AmazonBoughtItems.java utilise un objet de l’interface et définit des méthodes de paiement.
       
--DatabasConnectionSIGTest.java et AmazonBoughtItemsTest.java: 
+- DatabasConnectionSIGTest.java et AmazonBoughtItemsTest.java: 
 ce sont des classes de test de Junit qui utilise les annotations pour identifier les méthodes test.
 
--fichier pom.xml : 
+- fichier pom.xml : 
 il définit une seule dépendance ; c’est la dépendance du test Junit
